@@ -24,19 +24,19 @@ public class Vendedor {
     
     
     func vender (quantidadeDePecas: Int, tipoDePeca: String) {
-        if tipoDePeca == "Terno" {
+        if tipoDePeca == "Terno" { // tratamento para Terno
             if quantidadeDePecas >= 3 {
                 setSaldo(saldoEmConta: 350 * Double(quantidadeDePecas))
             } else {
                 setSaldo(saldoEmConta: (400 * Double(quantidadeDePecas)))
             }
-        } else if tipoDePeca == "Vestido"{
+        } else if tipoDePeca == "Vestido"{ // Tratamento para vestido
             if quantidadeDePecas >= 5 {
                 setSaldo(saldoEmConta: (900 * Double(quantidadeDePecas)) - 250)
             } else {
                 setSaldo(saldoEmConta: (900 * Double(quantidadeDePecas)))
              }
-          } else if tipoDePeca == "Boné" {
+          } else if tipoDePeca == "Boné" { // Tratamento para boné
             let valorTotal = quantidadeDePecas * 50 // soma o valor total da compra
             let valorDesconto = Int(quantidadeDePecas / 3) * 50 //desconto: transformei em int para tirar as casas decimais, e aplico 50 reais aos multiplos de 3
             setSaldo(saldoEmConta: Double(valorTotal - valorDesconto)) //obter o valor real da compra com o desconto
