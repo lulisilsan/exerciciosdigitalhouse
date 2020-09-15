@@ -53,3 +53,10 @@ Um vendedor de loja possui nome, idade e cpf, saldo em conta; vende em sua loja 
 * Cada boné custa 50 reais, e para cada 2 bonés vendidos, o terceiro boné é grátis, logo não haverá lucro.
 
 Encapsule todos os métodos necessários.
+
+
+### Enunciado do exercicio Cadastro Usuário:
+
+Fazer um app que tenha a classe usuário, que possa trabalhar com e-mail e senha. E a primeira vez que o usuário inserir o e-mail e senha devemos habilitar o botão de cadastro.
+
+Ao clicar em cadastrar devemos limpar os campos, ao inserir os dados pela segunda vez, devemos validar se o usuário ja foi previamente cadastrado, se sim, pintamos a tela de vermelho, se não, pintamos a tela de verde. 
