@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="login_cadastro_usuario" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça seu login ou cadastre-se" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq9-Ve-SjZ">
+                                <rect key="frame" x="45" y="74" width="324" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uj3-4Y-M3t">
+                                <rect key="frame" x="35" y="149.5" width="344" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dsw-pz-ikb">
+                                <rect key="frame" x="35" y="238.5" width="344" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOx-Pu-aa1">
+                                <rect key="frame" x="269" y="327.5" width="70" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Cadastro">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQu-Vq-Q2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI2-4t-0Ne">
+                                <rect key="frame" x="75" y="327.5" width="70" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVY-nJ-2V8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu e-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJa-Yv-hd3">
+                                <rect key="frame" x="35" y="149" width="344" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34509803919999998" green="0.25327052700000002" blue="0.61134218458767131" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kI2-4t-0Ne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="2WU-dl-kQs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bq9-Ve-SjZ" secondAttribute="trailing" constant="45" id="5R1-s1-dCd"/>
+                            <constraint firstItem="kI2-4t-0Ne" firstAttribute="top" secondItem="Dsw-pz-ikb" secondAttribute="bottom" constant="55" id="6hn-MR-plH"/>
+                            <constraint firstItem="Dsw-pz-ikb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="74f-n6-n6n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uj3-4Y-M3t" secondAttribute="trailing" constant="35" id="7cW-Uj-5gy"/>
+                            <constraint firstItem="bq9-Ve-SjZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="BXH-7I-1S0"/>
+                            <constraint firstItem="LOx-Pu-aa1" firstAttribute="top" secondItem="Dsw-pz-ikb" secondAttribute="bottom" constant="55" id="ClF-V2-MIj"/>
+                            <constraint firstItem="kI2-4t-0Ne" firstAttribute="height" secondItem="LOx-Pu-aa1" secondAttribute="height" id="E6V-Pf-pjH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dsw-pz-ikb" secondAttribute="trailing" constant="35" id="ErH-Jd-7jy"/>
+                            <constraint firstItem="Uj3-4Y-M3t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Fq3-7m-PEK"/>
+                            <constraint firstItem="Dsw-pz-ikb" firstAttribute="top" secondItem="Uj3-4Y-M3t" secondAttribute="bottom" constant="55" id="TL9-Ut-W6A"/>
+                            <constraint firstItem="bq9-Ve-SjZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Y7x-bI-j6w"/>
+                            <constraint firstItem="Uj3-4Y-M3t" firstAttribute="top" secondItem="bq9-Ve-SjZ" secondAttribute="bottom" constant="55" id="cVb-Lk-IMs"/>
+                            <constraint firstItem="kI2-4t-0Ne" firstAttribute="width" secondItem="LOx-Pu-aa1" secondAttribute="width" id="cw6-fE-yQS"/>
+                            <constraint firstItem="kI2-4t-0Ne" firstAttribute="top" secondItem="Dsw-pz-ikb" secondAttribute="bottom" constant="55" id="d0l-Bc-3Tg"/>
+                            <constraint firstItem="Uj3-4Y-M3t" firstAttribute="top" secondItem="bq9-Ve-SjZ" secondAttribute="bottom" constant="55" id="rN4-Sf-oI3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LOx-Pu-aa1" secondAttribute="trailing" constant="75" id="wzJ-Qd-RTR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tfEmail" destination="aJa-Yv-hd3" id="ufq-dg-E18"/>
+                        <outlet property="tfPassword" destination="Dsw-pz-ikb" id="Ci8-f1-qjf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="116.74876847290641"/>
+        </scene>
+    </scenes>
+</document>
